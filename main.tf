@@ -67,7 +67,7 @@ resource "aws_security_group" "mtc_sg" {
 
 resource "aws_key_pair" "mtc_auth" {
   key_name   = "west"
-  #public_key = file("~/.ssh/mtckey.pub")
+  public_key = file("C:\Users\ChandrakantI\Downloads/west.pem")
 }
 
 resource "aws_instance" "dev_node" {
