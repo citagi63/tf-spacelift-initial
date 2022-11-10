@@ -84,7 +84,7 @@ resource "aws_instance" "dev_node" {
     user_data = file("userdata.tpl")
 
     root_block_device {
-        volume_size = 20
+        volume_size = 10
     }
     
     tags = {
