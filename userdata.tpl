@@ -16,8 +16,8 @@ sudo docker run -it -d -p 80:80 --name nginx nginx
 cd /opt
 sudo apt update -y
 sudo apt-get install -y openjdk-11-jdk
-apt install maven -y
+sudo apt install maven -y
 sudo apt install git -y
-git clone https://github.com/citagi63/webapp.git
+sudo git clone https://github.com/citagi63/webapp.git
 cd webapp
 sudo mvn clean package
