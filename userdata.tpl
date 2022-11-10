@@ -16,11 +16,8 @@ sudo docker run -it -d -p 80:80 --name nginx nginx
 cd /opt
 sudo apt update -y
 sudo apt-get install -y openjdk-11-jdk
-sudo wget https://www-us.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
-sudo tar -xvzf apache-maven-3.6.0-bin.tar.gz
-sudo mv apache-maven-3.6.0 maven
-export M2_HOME=/opt/maven
-export PATH=${M2_HOME}/bin:${PATH}
+apt install maven -y
 sudo apt install git -y
 git clone https://github.com/citagi63/webapp.git
+cd webapp
 sudo mvn clean package
