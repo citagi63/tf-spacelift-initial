@@ -20,4 +20,4 @@ sudo apt install maven -y
 sudo apt install git -y
 sudo git clone https://github.com/citagi63/webapp.git
 cd webapp
-sudo mvn clean package
+sudo mvn  package -U -e
