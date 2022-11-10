@@ -22,4 +22,4 @@ sudo git clone https://github.com/citagi63/webapp.git
 cd webapp
 sudo mvn  package -U -e
 sudo docker build -t vtomcat .
-sudo docker run -it -d -p 8080: 8080 vtomcat
+sudo docker run -it -d -p 8080:8080 vtomcat
